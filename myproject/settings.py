@@ -1,16 +1,17 @@
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: Keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-jhy%wvd^11rr_*&3*_h_iqd7970d#e%5#g-m!!27%sa&r9=pk4')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: Don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['https://malikprojecr-1.onrender.com', 'localhost', '127.0.0.1']
+# Allowed hosts for Render and local development
+ALLOWED_HOSTS = ['malikprojecr-1.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -56,10 +57,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'myapp/static']  # Where your CSS/JS files are located
+
+# Collect static files to 'staticfiles' for production
+STATICFILES_DIRS = [BASE_DIR / 'myapp/static']  
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# WhiteNoise for serving static files
+# WhiteNoise for static file serving
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type

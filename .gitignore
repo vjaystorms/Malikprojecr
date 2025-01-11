@@ -1,0 +1,47 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django static and media files
+/staticfiles/
+media/
+
+# Database files (not needed in your case, but good practice)
+*.sqlite3
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor configurations
+.vscode/
+.idea/
+*.swp
+
+# Python package files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+pip-wheel-metadata/
+
+# Logs
+*.log
+
+# Deployment
+*.bak
+Procfile
+
+# Node modules (if using npm for frontend)
+node_modules/

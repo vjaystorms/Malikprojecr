@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp',  # Your app
+    'app',  # Your app
 ]
 
 MIDDLEWARE = [
@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 STATIC_URL = '/static/'
 
 # Collect static files to 'staticfiles' for production
-STATICFILES_DIRS = [BASE_DIR / 'myapp/static']  
+STATICFILES_DIRS = [BASE_DIR / 'app/static']  
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # WhiteNoise for static file serving

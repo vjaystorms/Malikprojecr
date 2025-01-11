@@ -1,0 +1,190 @@
+<style>
+  .objectives-section {
+    background-color: rgba(40, 19, 75, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 86px 80px;
+  }
+  .objectives-container {
+    display: flex;
+    width: 100%;
+    max-width: 1564px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .objectives-header {
+    display: flex;
+    width: 939px;
+    max-width: 100%;
+    flex-direction: column;
+    font-family: Creato Display, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+  .objectives-title {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .objectives-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 25px;
+  }
+  .objectives-grid {
+    align-self: stretch;
+    margin-top: 81px;
+  }
+  .objectives-row {
+    gap: 20px;
+    display: flex;
+  }
+  .objective-card {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 25%;
+  }
+  .card-content {
+    border-radius: 23px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-family: Creato Display, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 29px 29px 75px;
+  }
+  .card-icon {
+    background-color: rgba(255, 203, 3, 0.1);
+    border-radius: 50%;
+    display: flex;
+    width: 129px;
+    height: 98px;
+  }
+  .card-title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    line-height: 2;
+    margin-top: 27px;
+  }
+  .card-description {
+    color: rgba(97, 97, 97, 1);
+    font-size: 20px;
+    line-height: 39px;
+    margin-top: 35px;
+  }
+  .pagination {
+    display: flex;
+    margin-top: 64px;
+    align-items: center;
+    gap: 5px;
+  }
+  .pagination-dot {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    margin: auto 0;
+  }
+  .pagination-dot-active {
+    background-color: rgba(255, 203, 3, 1);
+  }
+  .pagination-dot-inactive {
+    background-color: rgba(255, 255, 255, 0.26);
+  }
+  @media (max-width: 991px) {
+    .objectives-section {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    .objectives-container {
+      max-width: 100%;
+    }
+    .objectives-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+    .objectives-subtitle {
+      max-width: 100%;
+    }
+    .objectives-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .objectives-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .objective-card {
+      width: 100%;
+    }
+    .card-content {
+      margin-top: 28px;
+      padding: 0 20px;
+    }
+    .pagination {
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<section class="objectives-section">
+  <div class="objectives-container">
+    <header class="objectives-header">
+      <h2 class="objectives-title">Programme Educational Objectives (PEOs)</h2>
+      <p class="objectives-subtitle">
+        The Department Of Electrical, Electronic & Telecommunication Engineering has five main
+      </p>
+    </header>
+    <div class="objectives-grid">
+      <div class="objectives-row">
+        <article class="objective-card">
+          <div class="card-content">
+            <div class="card-icon" aria-hidden="true"></div>
+            <h3 class="card-title">Mastering Digital Electronics</h3>
+            <p class="card-description">
+              Provides theoretical and practical expertise in circuits, computers, machinery, and programmable controls.
+            </p>
+          </div>
+        </article>
+        <article class="objective-card">
+          <div class="card-content">
+            <div class="card-icon" aria-hidden="true"></div>
+            <h3 class="card-title">Expertise in Application</h3>
+            <p class="card-description">
+              Demonstrate expertise in electrical and electronics engineering to support design, application, and maintenance needs.
+            </p>
+          </div>
+        </article>
+        <article class="objective-card">
+          <div class="card-content">
+            <div class="card-icon" aria-hidden="true"></div>
+            <h3 class="card-title">Modern Solutions</h3>
+            <p class="card-description">
+              Apply mathematics, science, engineering, and technology knowledge to solve diverse engineering problems.
+            </p>
+          </div>
+        </article>
+        <article class="objective-card">
+          <div class="card-content">
+            <div class="card-icon" aria-hidden="true"></div>
+            <h3 class="card-title">Expertise in Power Systems</h3>
+            <p class="card-description">
+              To gain expertise in Electrical & Electronics Engineering and develop skills for issue analysis in power generation and distribution.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <nav class="pagination" aria-label="Slide navigation">
+      <div class="pagination-dot pagination-dot-active" aria-current="true"></div>
+      <div class="pagination-dot pagination-dot-inactive"></div>
+      <div class="pagination-dot pagination-dot-inactive"></div>
+    </nav>
+  </div>
+</section>

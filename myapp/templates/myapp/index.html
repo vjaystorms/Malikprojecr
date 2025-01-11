@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Department of Electronics & Electrical Engineering - Producing young innovators in technology">
+    <title>Electronics & Electrical Engineering Department</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="/" class="logo" aria-label="Home">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvPnOL3lAqmz6JvX3fYg-JJP-bvuxYLp0MmTidNy-iN_6oONftseYAQPQ0irUES12wQM&usqp=CAU" alt="Department Logo" width="202" height="40">
+                </a>
+                <div class="nav-links" id="nav-links">
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#collab" class="nav-item">Collab</a>
+                    <a href="#board" class="nav-item">Board</a>
+                    <a href="{% url 'courses' %} ">Courses</a>
+                    <a href="https://www.bellsuniversity.edu.ng/" class="apply-button">Apply to Programme</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <span class="programme-tag">PROGRAMME</span>
+                <h1 id="hero-title">Department of<br>Electronics & Electrical Engineering</h1>
+                <p class="hero-description">Producing young men and women who shall be able to revolutionize the rather retrogressive or stagnant status of black African technology</p>
+                <a href="{% url 'courses' %}" class="cta-button">View our Courses</a>
+            </div>
+        </section>
+
+        <section id="collab" class="collab-section" aria-labelledby="collab-title">
+            <h2 id="collab-title">4+ <span>Collaborators</span> on this Project</h2>
+            <div class="slider-container" role="region" aria-label="Team members carousel">
+                <button class="slider-button prev" aria-label="Previous slide">←</button>
+                <div class="slides" style="color: black;"></div>
+                <button class="slider-button next" aria-label="Next slide">→</button>
+                <div class="slider-indicators" role="tablist" aria-label="Carousel pagination"></div>
+            </div>
+            <div class="overview-container">
+                <div class="overview-content">
+                  <div class="image-column overview-image">
+                  </div>
+                  <div class="text-column">
+                    <div class="text-wrapper">
+                      <h2 class="section-title">Overview</h2>
+                      <p class="section-description">
+                        B.Eng (Hons) Electrical and Electronics Engineering is a 5-year Degree Programme.
+                        <br><br>
+                        Students undergo Students Works Experience Programme (SWEP) for a period of three months at the end of their 200 level. They engage in three (3) and six (6) months of Students Industrial Work Experience Scheme (SIWES) in 300 & 400 level respectively which gives the student at least nine (9) months of working industrial experience before graduating from the University.
+                        <br><br>
+                        At 500 level, the students will undergo coursework and supervised projects in their areas of interest and present results orally before a panel of examiners, that is, by oral presentation and defense.
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="objectives-section">
+          <div class="objectives-container">
+            <header class="objectives-header">
+              <h2 class="objectives-title">Programme Educational Objectives (PEOs)</h2>
+              <p class="objectives-subtitle">
+                The Department Of Electrical, Electronic & Telecommunication Engineering has five main
+              </p>
+            </header>
+            <div class="objectives-grid">
+              <div class="objectives-row">
+                <article class="objective-card">
+                  <div class="card-content">
+                    <div class="card-icon" aria-hidden="true"></div>
+                    <h3 class="card-title">Mastering Digital Electronics</h3>
+                    <p class="card-description">
+                      Provides theoretical and practical expertise in circuits, computers, machinery, and programmable controls.
+                    </p>
+                  </div>
+                </article>
+                <article class="objective-card">
+                  <div class="card-content">
+                    <div class="card-icon" aria-hidden="true"></div>
+                    <h3 class="card-title">Expertise in Application</h3>
+                    <p class="card-description">
+                      Demonstrate expertise in electrical and electronics engineering to support design, application, and maintenance needs.
+                    </p>
+                  </div>
+                </article>
+                <article class="objective-card">
+                  <div class="card-content">
+                    <div class="card-icon" aria-hidden="true"></div>
+                    <h3 class="card-title">Modern Solutions</h3>
+                    <p class="card-description">
+                      Apply mathematics, science, engineering, and technology knowledge to solve diverse engineering problems.
+                    </p>
+                  </div>
+                </article>
+                <article class="objective-card">
+                  <div class="card-content">
+                    <div class="card-icon" aria-hidden="true"></div>
+                    <h3 class="card-title">Expertise in Power Systems</h3>
+                    <p class="card-description">
+                      To gain expertise in Electrical & Electronics Engineering and develop skills for issue analysis in power generation and distribution.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="board" class="directors-section" aria-labelledby="directors-title">
+            <h2 id="directors-title">Board of Directors</h2>
+            <p>View our list of department heads and board of directors</p>
+            <div class="directors-grid">
+                <article class="director-card">
+                    <img src="https://www.bellsuniversity.edu.ng/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-11-at-4.57.56-AM.jpeg" alt="Professor Ojo S Fayomi" width="400" height="500">
+                    <div class="director-info">
+                        <h3>Professor Ojo S Fayomi</h3>
+                        <p>Head of Department</p>
+                    </div>
+                </article>
+                <article class="director-card">
+                    <img src="https://placehold.co/400x600" alt="Adeyeye Adebimpe" width="400" height="500">
+                    <div class="director-info">
+                        <h3>Adeyeye Adebimpe</h3>
+                        <p>Course Advisor</p>
+                    </div>
+                </article>
+                <article class="director-card">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43dcb14418a7dec8612be99d7953ef076a60368fb79a14522cb8792ea08929b8?format=webp&placeholderIfAbsent=true&apiKey=0a94a3997bb04f0d8e67aae708c1822b" alt="Sina Alimi" width="400" height="500">
+                    <div class="director-info">
+                        <h3>Sina Alimi</h3>
+                        <p>Lecturer</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="program-section">
+            <div class="content-wrapper">
+              <div class="image-column">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e8ad129e908ed210c7ecf953456133b32366b39fcbd66bea100816cc97811b42?placeholderIfAbsent=true&apiKey=0a94a3997bb04f0d8e67aae708c1822b"
+                  class="program-image"
+                  alt="Program overview illustration"
+                />
+              </div>
+              <div class="details-column">
+                <div class="details-container">
+                  <div class="details-content">
+                    <h2 class="details-title">Program Details</h2>
+                    <p class="details-text">
+                      5-year degree program
+                      <br />
+                      Students undergo Students Works Experience Programme (SWEP) for 3
+                      months at the end of their 200 level
+                      <br />
+                      Students participate in Students Industrial Work Experience Scheme
+                      (SIWES) for 3 and 6 months in 300 and 400 levels, respectively
+                      <br />
+                      Final-year students undergo coursework and supervised projects, with
+                      oral presentation and defense
+                    </p>
+                  </div>
+                  <a
+                    href="https://www.bellsuniversity.edu.ng/"
+                    class="cta-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    role="button"
+                    tabindex="0"
+                  >
+                    Apply to Programme
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#collab">Collab</a>
+            <a href="#board">Board</a>
+            <a href="{% url 'courses' %}">Courses</a>
+        </nav>
+        <p class="team-credits">An extension of heartfelt thanks to the entire team for their hard work and dedication to this project. Ezekwe Daniel Ugochukwu, Danians-Osiewu Isaac Toluwalase, Okereke Uchenna Emmanuel, Hammed Malik Omotayo, Ikechukwu Alozie Anthony jnr and Lawal Abdulwarith.</p>
+        <div class="footer-divider" role="presentation"></div>
+        <p class="copyright">© 2025 <span>Group Project</span>. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'myapp/js/script.js' %}"></script>
+</body>
+</html>
+
+
